@@ -17,7 +17,7 @@ WORKDIR /app
 
 ONBUILD COPY pyproject.toml poetry.lock ./
 
-ONBUILD RUN poetry install --no-root --no-dev
+ONBUILD RUN poetry install --no-root --only main
 
 ONBUILD COPY . .
 
