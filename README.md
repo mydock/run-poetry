@@ -1,18 +1,12 @@
 # docker-run-poetry
 
-A ONBUILD docker for Cloud Run
+A ONBUILD docker for Cloud Run and more
 
 
-## alpha2
+## alpha2 (latest)
 
-Same as alpha1 except you must add files.
 ```dockerfile
-FROM ghcr.io/mydock/run-poetry:alpha1-py3.9-slim-po1.3
+FROM ghcr.io/mydock/run-poetry:alpha2-py3.9-bullseye-po1.3
 
 COPY . .
-```
-## alpha1
-
-```dockerfile
-FROM ghcr.io/mydock/run-poetry:alpha1-py3.9-slim-po1.3
 ```
