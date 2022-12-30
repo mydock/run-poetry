@@ -1,13 +1,8 @@
 name: Docker
 
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
 on:
   schedule:
-    - cron: '4 2 * * *'
+    - cron: '4 2 */3 * *'
   push:
     branches: [ "main" ]
   pull_request:
@@ -24,7 +19,6 @@ jobs:
     strategy:
       matrix:
         folder:
-        - alpha1
         - alpha2
         python:
         - '3.7'
@@ -34,6 +28,8 @@ jobs:
         - '3.11'
         variant:
         - 'slim'
+        - 'slim-bullseye'
+        - 'bullseye'
         poetry:
         - '1.3'
 
