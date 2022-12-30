@@ -19,7 +19,7 @@ jobs:
     strategy:
       matrix:
         folder:
-        - alpha2
+        - basic11
         python:
         - '3.7'
         - '3.8'
