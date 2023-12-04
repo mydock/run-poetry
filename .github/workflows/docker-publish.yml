@@ -26,13 +26,17 @@ jobs:
         - '3.9'
         - '3.10'
         - '3.11'
+        - '3.12'
         variant:
         - 'slim'
         - 'slim-bullseye'
         - 'bullseye'
         poetry:
         - '1.3'
-
+        - '1.4'
+        - '1.5'
+        - '1.6'
+        - '1.7'
     permissions:
       contents: read
       packages: write
