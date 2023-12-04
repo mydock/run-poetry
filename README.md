@@ -6,7 +6,7 @@ A ONBUILD docker for Cloud Run and more
 ## basic11 (latest)
 
 ```dockerfile
-FROM ghcr.io/mydock/run-poetry:basic11-py3.9-bullseye-po1.3
+FROM ghcr.io/mydock/run-poetry:basic11-py3.11-bullseye-po1.7
 
 COPY . .
 
