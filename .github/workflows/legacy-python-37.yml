@@ -1,4 +1,4 @@
-name: Docker
+name: legacy-python-37
 
 on:
   schedule:
@@ -21,18 +21,14 @@ jobs:
         folder:
         - basic11
         python:
-        - '3.8'
-        - '3.9'
-        - '3.10'
-        - '3.11'
-        - '3.12'
+        - '3.7'
         variant:
         - 'slim'
         - 'slim-bullseye'
         - 'bullseye'
         poetry:
         - '1.3'
-        - '1.7'
+        - '1.5'
     permissions:
       contents: read
       packages: write
