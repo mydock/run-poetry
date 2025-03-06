@@ -17,9 +17,10 @@ RUN apt-get update && apt-get install -y \
   && pip install --upgrade pip
 
 ARG POETRY_TAG
-RUN pip install keyrings.google-artifactregistry-auth
+
 RUN pip install poetry==${POETRY_TAG} \
- && poetry config virtualenvs.create false
+ && poetry config virtualenvs.create false \
+ && poetry self add keyrings.google-artifactregistry-auth
 
 ONBUILD COPY pyproject.toml poetry.lock ./
 
